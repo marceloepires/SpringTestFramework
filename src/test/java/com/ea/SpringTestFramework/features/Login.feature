@@ -1,0 +1,18 @@
+Feature: LoginFeature
+  This feature deals with the application login
+
+  Scenario: Login with correct username and password
+    Given I click login in Home Page
+    And I enter the following for Login
+    | username | password |
+    | admin    | password |
+    And I click login button
+    Then I should see userform page
+
+  Scenario: Login with correct username and password 2
+    Given I click login in Home Page
+    And I enter the following for Login
+      | username | password |
+      | admin    | password |
+    And I click login button
+    Then I should see userform page
