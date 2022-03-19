@@ -6,10 +6,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class BrowserScopeConfig {
+public class DriverScopeConfig {
 
     @Bean
     public static BeanFactoryPostProcessor beanFactoryPostProcessor() {
-        return new BrowserScopePostProcessor();
+
+        return new DriverScopePostProcessor();
     }
 }

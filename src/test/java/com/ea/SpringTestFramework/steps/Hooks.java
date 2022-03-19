@@ -27,6 +27,6 @@ public class Hooks {
             //Screenshot
             System.out.println(scenario.getName());
         }
-//        webDriver.quit();
+        webDriver.quit();
     }
 }

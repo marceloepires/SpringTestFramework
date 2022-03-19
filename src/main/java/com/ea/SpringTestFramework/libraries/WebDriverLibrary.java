@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class WebDriverLibrary {
@@ -20,6 +21,7 @@ public class WebDriverLibrary {
 
     @Bean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+    @Scope("driverscope")
     public WebDriver getFirefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();

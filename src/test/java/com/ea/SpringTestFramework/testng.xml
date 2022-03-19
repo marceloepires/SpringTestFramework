@@ -7,4 +7,10 @@
             </class>
         </classes>
     </test>
+    <test name="E2E Test of EAApp2">
+        <classes>
+            <class name="com.ea.SpringTestFramework.runner.TestRunner">
+            </class>
+        </classes>
+    </test>
 </suite>
